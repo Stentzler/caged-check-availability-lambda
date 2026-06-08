@@ -1,0 +1,15 @@
+.codex
+AGENTS.md
+SPEC.md
+.aws-sam/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.uv-cache/
+__pycache__/
+*.egg-info/
+*.py[cod]
+.mypy_cache/
+dist/
+build/
+.env
