@@ -1,0 +1,1308 @@
+{
+  "registry_id": "ftp_tree",
+  "source": "caged_ftp",
+  "tree": {
+    "2020": {
+      "202001": {
+        "CAGEDMOV202001.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202001/CAGEDMOV202001.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202002": {
+        "CAGEDFOR202002.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202002/CAGEDFOR202002.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202002.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202002/CAGEDMOV202002.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202003": {
+        "CAGEDFOR202003.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202003/CAGEDFOR202003.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202003.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202003/CAGEDMOV202003.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202004": {
+        "CAGEDEXC202004.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202004/CAGEDEXC202004.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202004.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202004/CAGEDFOR202004.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202004.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202004/CAGEDMOV202004.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202005": {
+        "CAGEDEXC202005.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202005/CAGEDEXC202005.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202005.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202005/CAGEDFOR202005.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202005.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202005/CAGEDMOV202005.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202006": {
+        "CAGEDEXC202006.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202006/CAGEDEXC202006.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202006.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202006/CAGEDFOR202006.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202006.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202006/CAGEDMOV202006.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202007": {
+        "CAGEDEXC202007.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202007/CAGEDEXC202007.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202007.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202007/CAGEDFOR202007.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202007.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202007/CAGEDMOV202007.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202008": {
+        "CAGEDEXC202008.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202008/CAGEDEXC202008.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202008.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202008/CAGEDFOR202008.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202008.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202008/CAGEDMOV202008.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202009": {
+        "CAGEDEXC202009.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202009/CAGEDEXC202009.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202009.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202009/CAGEDFOR202009.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202009.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202009/CAGEDMOV202009.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202010": {
+        "CAGEDEXC202010.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202010/CAGEDEXC202010.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202010.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202010/CAGEDFOR202010.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202010.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202010/CAGEDMOV202010.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202011": {
+        "CAGEDEXC202011.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202011/CAGEDEXC202011.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202011.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202011/CAGEDFOR202011.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202011.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202011/CAGEDMOV202011.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202012": {
+        "CAGEDEXC202012.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202012/CAGEDEXC202012.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202012.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202012/CAGEDFOR202012.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202012.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2020/202012/CAGEDMOV202012.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      }
+    },
+    "2021": {
+      "202101": {
+        "CAGEDEXC202101.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202101/CAGEDEXC202101.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202101.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202101/CAGEDFOR202101.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202101.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202101/CAGEDMOV202101.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202102": {
+        "CAGEDEXC202102.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202102/CAGEDEXC202102.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202102.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202102/CAGEDFOR202102.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202102.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202102/CAGEDMOV202102.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202103": {
+        "CAGEDEXC202103.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202103/CAGEDEXC202103.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202103.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202103/CAGEDFOR202103.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202103.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202103/CAGEDMOV202103.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202104": {
+        "CAGEDEXC202104.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202104/CAGEDEXC202104.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202104.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202104/CAGEDFOR202104.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202104.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202104/CAGEDMOV202104.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202105": {
+        "CAGEDEXC202105.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202105/CAGEDEXC202105.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202105.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202105/CAGEDFOR202105.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202105.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202105/CAGEDMOV202105.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202106": {
+        "CAGEDEXC202106.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202106/CAGEDEXC202106.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202106.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202106/CAGEDFOR202106.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202106.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202106/CAGEDMOV202106.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202107": {
+        "CAGEDEXC202107.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202107/CAGEDEXC202107.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202107.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202107/CAGEDFOR202107.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202107.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202107/CAGEDMOV202107.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202108": {
+        "CAGEDEXC202108.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202108/CAGEDEXC202108.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202108.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202108/CAGEDFOR202108.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202108.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202108/CAGEDMOV202108.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202109": {
+        "CAGEDEXC202109.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202109/CAGEDEXC202109.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202109.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202109/CAGEDFOR202109.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202109.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202109/CAGEDMOV202109.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202110": {
+        "Aviso 220131.txt": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202110/Aviso 220131.txt",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDEXC202110.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202110/CAGEDEXC202110.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202110.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202110/CAGEDFOR202110.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202110.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202110/CAGEDMOV202110.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202111": {
+        "Aviso 220131.txt": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202111/Aviso 220131.txt",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDEXC202111.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202111/CAGEDEXC202111.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202111.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202111/CAGEDFOR202111.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202111.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202111/CAGEDMOV202111.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202112": {
+        "Aviso 220131.txt": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202112/Aviso 220131.txt",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDEXC202112.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202112/CAGEDEXC202112.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202112.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202112/CAGEDFOR202112.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202112.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2021/202112/CAGEDMOV202112.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      }
+    },
+    "2022": {
+      "202201": {
+        "CAGEDEXC202201.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202201/CAGEDEXC202201.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202201.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202201/CAGEDFOR202201.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202201.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202201/CAGEDMOV202201.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202202": {
+        "CAGEDEXC202202.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202202/CAGEDEXC202202.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202202.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202202/CAGEDFOR202202.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202202.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202202/CAGEDMOV202202.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202203": {
+        "CAGEDEXC202203.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202203/CAGEDEXC202203.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202203.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202203/CAGEDFOR202203.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202203.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202203/CAGEDMOV202203.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202204": {
+        "CAGEDEXC202204.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202204/CAGEDEXC202204.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202204.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202204/CAGEDFOR202204.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202204.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202204/CAGEDMOV202204.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202205": {
+        "CAGEDEXC202205.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202205/CAGEDEXC202205.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202205.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202205/CAGEDFOR202205.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202205.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202205/CAGEDMOV202205.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202206": {
+        "CAGEDEXC202206.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202206/CAGEDEXC202206.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202206.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202206/CAGEDFOR202206.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202206.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202206/CAGEDMOV202206.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202207": {
+        "CAGEDEXC202207.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202207/CAGEDEXC202207.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202207.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202207/CAGEDFOR202207.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202207.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202207/CAGEDMOV202207.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202208": {
+        "CAGEDEXC202208.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202208/CAGEDEXC202208.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202208.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202208/CAGEDFOR202208.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202208.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202208/CAGEDMOV202208.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202209": {
+        "CAGEDEXC202209.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202209/CAGEDEXC202209.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202209.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202209/CAGEDFOR202209.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202209.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202209/CAGEDMOV202209.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202210": {
+        "CAGEDEXC202210.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202210/CAGEDEXC202210.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202210.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202210/CAGEDFOR202210.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202210.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202210/CAGEDMOV202210.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202211": {
+        "CAGEDEXC202211.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202211/CAGEDEXC202211.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202211.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202211/CAGEDFOR202211.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202211.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202211/CAGEDMOV202211.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202212": {
+        "CAGEDEXC202212.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202212/CAGEDEXC202212.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202212.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202212/CAGEDFOR202212.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202212.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2022/202212/CAGEDMOV202212.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      }
+    },
+    "2023": {
+      "202301": {
+        "CAGEDEXC202301.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202301/CAGEDEXC202301.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202301.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202301/CAGEDFOR202301.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202301.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202301/CAGEDMOV202301.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202302": {
+        "CAGEDEXC202302.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202302/CAGEDEXC202302.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202302.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202302/CAGEDFOR202302.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202302.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202302/CAGEDMOV202302.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202303": {
+        "CAGEDEXC202303.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202303/CAGEDEXC202303.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202303.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202303/CAGEDFOR202303.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202303.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202303/CAGEDMOV202303.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202304": {
+        "CAGEDEXC202304.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202304/CAGEDEXC202304.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202304.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202304/CAGEDFOR202304.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202304.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202304/CAGEDMOV202304.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202305": {
+        "CAGEDEXC202305.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202305/CAGEDEXC202305.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202305.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202305/CAGEDFOR202305.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202305.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202305/CAGEDMOV202305.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202306": {
+        "CAGEDEXC202306.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202306/CAGEDEXC202306.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202306.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202306/CAGEDFOR202306.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202306.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202306/CAGEDMOV202306.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202307": {
+        "CAGEDEXC202307.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202307/CAGEDEXC202307.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202307.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202307/CAGEDFOR202307.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202307.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202307/CAGEDMOV202307.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202308": {
+        "CAGEDEXC202308.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202308/CAGEDEXC202308.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202308.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202308/CAGEDFOR202308.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202308.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202308/CAGEDMOV202308.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202309": {
+        "CAGEDEXC202309.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202309/CAGEDEXC202309.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202309.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202309/CAGEDFOR202309.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202309.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202309/CAGEDMOV202309.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202310": {
+        "CAGEDEXC202310.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202310/CAGEDEXC202310.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202310.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202310/CAGEDFOR202310.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202310.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202310/CAGEDMOV202310.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202311": {
+        "CAGEDEXC202311.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202311/CAGEDEXC202311.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202311.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202311/CAGEDFOR202311.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202311.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202311/CAGEDMOV202311.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202312": {
+        "CAGEDEXC202312.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202312/CAGEDEXC202312.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202312.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202312/CAGEDFOR202312.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202312.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2023/202312/CAGEDMOV202312.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      }
+    },
+    "2024": {
+      "202401": {
+        "CAGEDEXC202401.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202401/CAGEDEXC202401.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202401.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202401/CAGEDFOR202401.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202401.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202401/CAGEDMOV202401.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202402": {
+        "CAGEDEXC202402.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202402/CAGEDEXC202402.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202402.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202402/CAGEDFOR202402.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202402.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202402/CAGEDMOV202402.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202403": {
+        "CAGEDEXC202403.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202403/CAGEDEXC202403.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202403.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202403/CAGEDFOR202403.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202403.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202403/CAGEDMOV202403.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202404": {
+        "CAGEDEXC202404.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202404/CAGEDEXC202404.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202404.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202404/CAGEDFOR202404.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202404.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202404/CAGEDMOV202404.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202405": {
+        "CAGEDEXC202405.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202405/CAGEDEXC202405.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202405.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202405/CAGEDFOR202405.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202405.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202405/CAGEDMOV202405.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202406": {
+        "CAGEDEXC202406.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202406/CAGEDEXC202406.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202406.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202406/CAGEDFOR202406.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202406.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202406/CAGEDMOV202406.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202407": {
+        "CAGEDEXC202407.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202407/CAGEDEXC202407.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202407.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202407/CAGEDFOR202407.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202407.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202407/CAGEDMOV202407.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202408": {
+        "CAGEDEXC202408.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202408/CAGEDEXC202408.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202408.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202408/CAGEDFOR202408.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202408.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202408/CAGEDMOV202408.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202409": {
+        "CAGEDEXC202409.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202409/CAGEDEXC202409.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202409.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202409/CAGEDFOR202409.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202409.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202409/CAGEDMOV202409.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202410": {
+        "CAGEDEXC202410.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202410/CAGEDEXC202410.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202410.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202410/CAGEDFOR202410.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202410.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202410/CAGEDMOV202410.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202411": {
+        "CAGEDEXC202411.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202411/CAGEDEXC202411.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202411.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202411/CAGEDFOR202411.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202411.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202411/CAGEDMOV202411.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202412": {
+        "CAGEDEXC202412.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202412/CAGEDEXC202412.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202412.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202412/CAGEDFOR202412.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202412.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2024/202412/CAGEDMOV202412.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      }
+    },
+    "2025": {
+      "202501": {
+        "CAGEDEXC202501.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202501/CAGEDEXC202501.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202501.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202501/CAGEDFOR202501.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202501.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202501/CAGEDMOV202501.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202502": {
+        "CAGEDEXC202502.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202502/CAGEDEXC202502.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202502.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202502/CAGEDFOR202502.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202502.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202502/CAGEDMOV202502.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202503": {
+        "CAGEDEXC202503.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202503/CAGEDEXC202503.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202503.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202503/CAGEDFOR202503.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202503.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202503/CAGEDMOV202503.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202504": {
+        "CAGEDEXC202504.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202504/CAGEDEXC202504.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202504.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202504/CAGEDFOR202504.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202504.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202504/CAGEDMOV202504.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202505": {
+        "CAGEDEXC202505.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202505/CAGEDEXC202505.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202505.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202505/CAGEDFOR202505.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202505.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202505/CAGEDMOV202505.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202506": {
+        "CAGEDEXC202506.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202506/CAGEDEXC202506.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202506.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202506/CAGEDFOR202506.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202506.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202506/CAGEDMOV202506.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202507": {
+        "CAGEDEXC202507.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202507/CAGEDEXC202507.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202507.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202507/CAGEDFOR202507.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202507.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202507/CAGEDMOV202507.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202508": {
+        "CAGEDEXC202508.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202508/CAGEDEXC202508.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202508.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202508/CAGEDFOR202508.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202508.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202508/CAGEDMOV202508.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202509": {
+        "CAGEDEXC202509.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202509/CAGEDEXC202509.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202509.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202509/CAGEDFOR202509.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202509.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202509/CAGEDMOV202509.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202510": {
+        "CAGEDEXC202510.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202510/CAGEDEXC202510.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202510.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202510/CAGEDFOR202510.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202510.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202510/CAGEDMOV202510.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202511": {
+        "CAGEDEXC202511.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202511/CAGEDEXC202511.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202511.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202511/CAGEDFOR202511.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202511.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202511/CAGEDMOV202511.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202512": {
+        "CAGEDEXC202512.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202512/CAGEDEXC202512.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202512.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202512/CAGEDFOR202512.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202512.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2025/202512/CAGEDMOV202512.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      }
+    },
+    "2026": {
+      "202601": {
+        "CAGEDEXC202601.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202601/CAGEDEXC202601.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202601.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202601/CAGEDFOR202601.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202601.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202601/CAGEDMOV202601.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202602": {
+        "CAGEDEXC202602.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202602/CAGEDEXC202602.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202602.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202602/CAGEDFOR202602.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202602.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202602/CAGEDMOV202602.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202603": {
+        "CAGEDEXC202603.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202603/CAGEDEXC202603.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202603.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202603/CAGEDFOR202603.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202603.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202603/CAGEDMOV202603.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      },
+      "202604": {
+        "CAGEDEXC202604.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202604/CAGEDEXC202604.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDFOR202604.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202604/CAGEDFOR202604.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        },
+        "CAGEDMOV202604.7z": {
+          "status": "downloaded",
+          "s3_url": "s3://caged-registry-test/2026/202604/CAGEDMOV202604.7z",
+          "updated_at": "2026-06-09T00:00:00Z"
+        }
+      }
+    }
+  },
+  "updated_at": "2026-06-09T00:00:00Z"
+}

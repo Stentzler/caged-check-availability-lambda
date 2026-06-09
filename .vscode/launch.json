@@ -13,7 +13,11 @@
         "POWERTOOLS_SERVICE_NAME": "boilerplate-lambda-local",
         "POWERTOOLS_LOG_LEVEL": "DEBUG",
         "POWERTOOLS_LOG_EVENT": "false",
-        "DEBUGPY_ENABLED": "false"
+        "DEBUGPY_ENABLED": "false",
+        "DYNAMODB_ENDPOINT_URL": "http://127.0.0.1:8000",
+        "AWS_DEFAULT_REGION": "us-east-1",
+        "AWS_ACCESS_KEY_ID": "dummy",
+        "AWS_SECRET_ACCESS_KEY": "dummy"
       }
     },
     {

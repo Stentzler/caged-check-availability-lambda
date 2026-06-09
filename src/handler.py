@@ -1,3 +1,4 @@
+from serverless_toolkit.aws.dynamodb import get_dynamodb_table
 from serverless_toolkit.observability.lambda_logger import (
     get_lambda_logger,
     inject_lambda_context,
@@ -7,12 +8,17 @@ from service import CheckAvailabilityService
 from settings import settings
 
 logger = get_lambda_logger()
-service = CheckAvailabilityService(settings=settings, logger=logger)
+registry_table = get_dynamodb_table(settings.REGISTRY_TABLE_NAME)
+service = CheckAvailabilityService(
+    settings=settings,
+    logger=logger,
+    registry_table=registry_table,
+)
 
 
 @inject_lambda_context(logger)
 def handler(event: dict | None, context: object | None) -> dict:
-    """Return the available Novo CAGED FTP files grouped by year and month."""
+    """Return files for Novo CAGED FTP files that need processing."""
     request_event = event or {}
     logger.info("Starting CAGED availability check")
 
@@ -22,7 +28,10 @@ def handler(event: dict | None, context: object | None) -> dict:
         logger.exception("Failed to check CAGED availability, Check DEBUG level logs")
         raise
 
-    logger.info("Finished CAGED availability check", years_count=len(response))
+    logger.info(
+        "Finished CAGED availability check",
+        new_files_count=len(response["new_files"]),
+    )
     return response
 
 

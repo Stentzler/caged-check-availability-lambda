@@ -1,5 +1,6 @@
 import importlib
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -7,6 +8,11 @@ from typing import Any
 PROJECT_ROOT = Path(__file__).resolve().parent
 SRC_DIR = PROJECT_ROOT / "src"
 DEFAULT_EVENT_PATH = PROJECT_ROOT / "events" / "check-availability.json"
+
+os.environ.setdefault("DYNAMODB_ENDPOINT_URL", "http://127.0.0.1:8000")
+os.environ.setdefault("AWS_DEFAULT_REGION", "us-east-1")
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "dummy")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "dummy")
 
 
 class LocalLambdaContext:

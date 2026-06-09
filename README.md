@@ -1,7 +1,8 @@
 # CAGED Check Availability Lambda
 
-AWS Lambda function that checks whether a monthly Novo CAGED `CAGEDMOVYYYYMM.7z`
-file is available on the public FTP server.
+AWS Lambda function that scans the Novo CAGED FTP tree, compares it with the
+DynamoDB downloaded-file registry, and returns new files that still
+need downstream processing.
 
 ## Local setup
 
@@ -23,8 +24,8 @@ Run lint checks:
 uv run ruff check .
 ```
 
-Run the handler locally with the default event. This performs a real FTP check
-for the previous calendar month:
+Run the handler locally with the default event. This performs a real FTP scan
+and reads the registry from DynamoDB:
 
 ```bash
 uv run python -m src.handler
@@ -49,14 +50,56 @@ Then select `Python: Attach to terminal command` in VS Code and start
 debugging. Execution will continue after VS Code attaches, and red breakpoints
 in the executed file will be active.
 
-## Lambda event
+## Environment variables
 
-`year_month` is optional. When omitted, the Lambda checks the previous calendar
-month.
+```env
+REGISTRY_TABLE_NAME=downloaded_files_registry
+REGISTRY_ID=ftp_tree
+REGISTRY_SOURCE=caged_ftp
+```
+
+For local DynamoDB:
+
+```env
+DYNAMODB_ENDPOINT_URL=http://127.0.0.1:8000
+AWS_DEFAULT_REGION=us-east-1
+AWS_ACCESS_KEY_ID=dummy
+AWS_SECRET_ACCESS_KEY=dummy
+```
+
+`debug_handler.py` and the VS Code local launch configuration provide these
+defaults before importing `src/handler.py`. Run the Lambda locally with:
+
+```bash
+uv run python debug_handler.py
+```
+
+To run with an explicit one-command override instead:
+
+```bash
+DYNAMODB_ENDPOINT_URL=http://127.0.0.1:8000 \
+AWS_DEFAULT_REGION=us-east-1 \
+AWS_ACCESS_KEY_ID=dummy \
+AWS_SECRET_ACCESS_KEY=dummy \
+uv run python debug_handler.py
+```
+
+Do not set `DYNAMODB_ENDPOINT_URL` in AWS Lambda unless you intentionally need a
+custom endpoint. In AWS, the SDK uses the configured region and Lambda execution
+role.
+
+## Lambda response
 
 ```json
 {
-  "year_month": "202605"
+  "new_files": [
+    {
+      "filename": "CAGEDMOV202605.7z",
+      "ftp_url": "ftp://ftp.mtps.gov.br/pdet/microdados/NOVO%20CAGED/2026/202605/CAGEDMOV202605.7z",
+      "reference_month": "202605",
+      "reference_year": "2026"
+    }
+  ]
 }
 ```
 
@@ -67,4 +110,28 @@ experiments.
 
 ```bash
 uv run python -m src.handler events/check-availability.json
+```
+
+## Local registry sample
+
+`sample/downloaded_files_registry.json` contains the complete DynamoDB registry
+fixture generated from `sample/caged_data.json`. All files are marked as
+`downloaded` and use fake S3 URLs.
+
+Seed the fixture into DynamoDB Local:
+
+```bash
+uv run python test.py seed-registry
+```
+
+Read the stored registry summary:
+
+```bash
+uv run python test.py read-registry
+```
+
+Verify that the live FTP comparison finds no new files:
+
+```bash
+uv run python test.py no-new-files
 ```

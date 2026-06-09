@@ -6,7 +6,13 @@ from ftplib import FTP
 from logging import getLogger
 from posixpath import basename
 from typing import Any, Protocol
+from urllib.parse import quote
 
+from src.exceptions import (
+    InvalidRegistryTreeError,
+    RegistryItemNotFoundError,
+    TooManyNewFilesError,
+)
 from src.settings import Settings
 
 
@@ -30,25 +36,41 @@ class LoggerProtocol(Protocol):
     def debug(self, message: str, *args: object, **kwargs: object) -> None: ...
 
 
+class RegistryTableProtocol(Protocol):
+    """Minimal DynamoDB table operations required by the service."""
+
+    def get_item(self, **kwargs: object) -> dict[str, Any]: ...
+
+
+type CagedTree = dict[str, dict[str, list[str]]]
+type RegistryTree = dict[str, dict[str, dict[str, dict[str, Any]]]]
+type NewFile = dict[str, str]
+
+
 class CheckAvailabilityService:
     """Build the available Novo CAGED file tree from the public FTP server."""
 
     YEAR_PATTERN = re.compile(r"^\d{4}$")
     YEAR_MONTH_PATTERN = re.compile(r"^\d{6}$")
+    PROCESSED_STATUSES = frozenset({"downloaded", "skipped"})
+    MAX_NEW_FILES = 12
 
     def __init__(
         self,
         settings: Settings,
         ftp_factory: Callable[..., FTPClientProtocol] = FTP,
         logger: LoggerProtocol | None = None,
+        registry_table: RegistryTableProtocol | None = None,
     ) -> None:
         self.settings = settings
         self.ftp_factory = ftp_factory
         self.logger = logger or getLogger(__name__)
+        self.registry_table = registry_table
 
     def list_entries(self, ftp: FTPClientProtocol, path: str) -> list[str]:
         """Return normalized entry names for a remote FTP directory."""
         self.logger.debug("Listing FTP directory", path=path)
+
         ftp.cwd(path)
         entries = [basename(entry) for entry in ftp.nlst()]
         self.logger.debug(
@@ -62,7 +84,7 @@ class CheckAvailabilityService:
         self,
         ftp: FTPClientProtocol,
         root_dir: str,
-    ) -> dict[str, dict[str, list[str]]]:
+    ) -> CagedTree:
         """Return files grouped as year -> year_month -> file names."""
         tree = {}
         self.logger.debug("Building CAGED FTP tree", root_dir=root_dir)
@@ -91,8 +113,95 @@ class CheckAvailabilityService:
         self.logger.debug("Built CAGED FTP tree", years_count=len(tree))
         return tree
 
+    def load_registry_tree(self) -> RegistryTree:
+        """Return the persisted CAGED file registry tree from DynamoDB."""
+        if self.registry_table is None:
+            self.logger.debug("No registry table configured, using empty registry")
+            return {}
+
+        response = self.registry_table.get_item(
+            Key={"registry_id": self.settings.REGISTRY_ID},
+        )
+
+        item = response.get("Item")
+        if not item:
+            self.logger.debug(
+                "Registry item not found",
+                registry_id=self.settings.REGISTRY_ID,
+            )
+            raise RegistryItemNotFoundError(
+                registry_id=self.settings.REGISTRY_ID,
+                table_name=self.settings.REGISTRY_TABLE_NAME,
+            )
+
+        tree = item.get("tree", {})
+        if not isinstance(tree, dict):
+            self.logger.debug(
+                "Registry item has invalid tree",
+                registry_id=self.settings.REGISTRY_ID,
+            )
+            raise InvalidRegistryTreeError(
+                registry_id=self.settings.REGISTRY_ID,
+                actual_type=type(tree),
+            )
+
+        return tree
+
+    def check_new_files(
+        self,
+        ftp_tree: CagedTree,
+        registry_tree: RegistryTree,
+    ) -> list[NewFile]:
+        """Return FTP files that are not completed in the registry."""
+        new_files = []
+
+        for year, months in sorted(ftp_tree.items()):
+            registry_year = registry_tree.get(year, {})
+            if not isinstance(registry_year, dict):
+                registry_year = {}
+
+            for reference_date, filenames in sorted(months.items()):
+                registry_month = registry_year.get(reference_date, {})
+                if not isinstance(registry_month, dict):
+                    registry_month = {}
+
+                for filename in sorted(filenames):
+                    registry_file = registry_month.get(filename, {})
+                    if not isinstance(registry_file, dict):
+                        registry_file = {}
+
+                    status = registry_file.get("status")
+                    if status in self.PROCESSED_STATUSES:
+                        continue
+
+                    new_files.append(
+                        {
+                            "filename": filename,
+                            "ftp_url": self.build_ftp_url(
+                                year,
+                                reference_date,
+                                filename,
+                            ),
+                            "reference_month": reference_date,
+                            "reference_year": year,
+                        }
+                    )
+
+        return new_files
+
+    def build_ftp_url(
+        self,
+        year: str,
+        reference_date: str,
+        filename: str,
+    ) -> str:
+        """Return the encoded FTP URL for a CAGED file."""
+        path = f"{self.settings.FTP_ROOT_DIR}/{year}/{reference_date}/{filename}"
+        encoded_path = quote(path)
+        return f"ftp://{self.settings.FTP_HOST}{encoded_path}"
+
     def execute(self, event: dict[str, Any]) -> dict[str, Any]:
-        """Connect to the FTP server and return the complete availability tree."""
+        """Return files for FTP files that need downstream processing."""
         self.logger.debug(
             "Connecting to CAGED FTP server",
             ftp_host=self.settings.FTP_HOST,
@@ -104,10 +213,20 @@ class CheckAvailabilityService:
             encoding="latin-1",
         ) as ftp:
             ftp.login()
-            caged_tree = self.build_caged_tree(ftp, self.settings.FTP_ROOT_DIR)
+            ftp_tree = self.build_caged_tree(ftp, self.settings.FTP_ROOT_DIR)
+
+        registry_tree = self.load_registry_tree()
+        new_files = self.check_new_files(ftp_tree, registry_tree)
 
         self.logger.debug(
             "Finished CAGED FTP availability check",
-            years_count=len(caged_tree),
+            new_files=len(new_files),
         )
-        return caged_tree
+
+        if len(new_files) > self.MAX_NEW_FILES:
+            raise TooManyNewFilesError(
+                file_count=len(new_files),
+                max_file_count=self.MAX_NEW_FILES,
+            )
+
+        return {"new_files": new_files}

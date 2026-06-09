@@ -5,13 +5,17 @@ class FakeCheckAvailabilityService:
     def execute(self, event: dict) -> dict:
         assert event == {"request_id": "local-test"}
         return {
-            "2026": {
-                "202601": [
-                    "CAGEDEXC202601.7z",
-                    "CAGEDFOR202601.7z",
-                    "CAGEDMOV202601.7z",
-                ],
-            },
+            "new_files": [
+                {
+                    "filename": "CAGEDMOV202601.7z",
+                    "ftp_url": (
+                        "ftp://ftp.mtps.gov.br/pdet/microdados/NOVO%20CAGED/"
+                        "2026/202601/CAGEDMOV202601.7z"
+                    ),
+                    "reference_month": "202601",
+                    "reference_year": "2026",
+                },
+            ],
         }
 
 
@@ -31,11 +35,15 @@ def test_lambda_handler_returns_service_response(monkeypatch) -> None:
     )
 
     assert response == {
-        "2026": {
-            "202601": [
-                "CAGEDEXC202601.7z",
-                "CAGEDFOR202601.7z",
-                "CAGEDMOV202601.7z",
-            ],
-        },
+        "new_files": [
+            {
+                "filename": "CAGEDMOV202601.7z",
+                "ftp_url": (
+                    "ftp://ftp.mtps.gov.br/pdet/microdados/NOVO%20CAGED/"
+                    "2026/202601/CAGEDMOV202601.7z"
+                ),
+                "reference_month": "202601",
+                "reference_year": "2026",
+            },
+        ],
     }
