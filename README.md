@@ -97,11 +97,16 @@ role.
       "filename": "CAGEDMOV202605.7z",
       "ftp_url": "ftp://ftp.mtps.gov.br/pdet/microdados/NOVO%20CAGED/2026/202605/CAGEDMOV202605.7z",
       "reference_month": "202605",
-      "reference_year": "2026"
+      "reference_year": "2026",
+      "s3_key": "raw/caged/year=2026/month=05/file_type=movement/CAGEDMOV202605.7z"
     }
   ]
 }
 ```
+
+The `file_type` partition identifies the CAGED archive category without requiring
+consumers to parse the filename: `movement` for `CAGEDMOV`, `exclusion` for
+`CAGEDEXC`, and `late_movement` for `CAGEDFOR`. Unrecognized files use `other`.
 
 ## Local event file
 

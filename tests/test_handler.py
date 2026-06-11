@@ -14,6 +14,10 @@ class FakeCheckAvailabilityService:
                     ),
                     "reference_month": "202601",
                     "reference_year": "2026",
+                    "s3_key": (
+                        "raw/caged/year=2026/month=01/"
+                        "file_type=movement/CAGEDMOV202601.7z"
+                    ),
                 },
             ],
         }
@@ -44,6 +48,9 @@ def test_lambda_handler_returns_service_response(monkeypatch) -> None:
                 ),
                 "reference_month": "202601",
                 "reference_year": "2026",
+                "s3_key": (
+                    "raw/caged/year=2026/month=01/file_type=movement/CAGEDMOV202601.7z"
+                ),
             },
         ],
     }

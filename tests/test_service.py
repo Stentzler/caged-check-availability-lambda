@@ -88,6 +88,9 @@ def test_execute_returns_new_files_missing_from_registry() -> None:
                 ),
                 "reference_month": "202601",
                 "reference_year": "2026",
+                "s3_key": (
+                    "raw/caged/year=2026/month=01/file_type=exclusion/CAGEDEXC202601.7z"
+                ),
             },
             {
                 "filename": "CAGEDMOV202601.7z",
@@ -97,6 +100,9 @@ def test_execute_returns_new_files_missing_from_registry() -> None:
                 ),
                 "reference_month": "202601",
                 "reference_year": "2026",
+                "s3_key": (
+                    "raw/caged/year=2026/month=01/file_type=movement/CAGEDMOV202601.7z"
+                ),
             },
         ],
     }
@@ -134,8 +140,31 @@ def test_check_new_files_skips_downloaded_and_skipped_files() -> None:
             ),
             "reference_month": "202601",
             "reference_year": "2026",
+            "s3_key": (
+                "raw/caged/year=2026/month=01/file_type=movement/CAGEDMOV202601.7z"
+            ),
         },
     ]
+
+
+@pytest.mark.parametrize(
+    ("filename", "file_type"),
+    [
+        ("CAGEDMOV202604.7z", "movement"),
+        ("CAGEDEXC202604.7z", "exclusion"),
+        ("CAGEDFOR202604.7z", "late_movement"),
+        ("README.txt", "other"),
+    ],
+)
+def test_build_s3_key_partitions_files_by_type(
+    filename: str,
+    file_type: str,
+) -> None:
+    service = CheckAvailabilityService(Settings())
+
+    s3_key = service.build_s3_key("2026", "202604", filename)
+
+    assert s3_key == (f"raw/caged/year=2026/month=04/file_type={file_type}/{filename}")
 
 
 def test_check_new_files_retries_failed_and_unknown_statuses() -> None:

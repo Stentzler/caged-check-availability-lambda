@@ -53,6 +53,11 @@ class CheckAvailabilityService:
     YEAR_PATTERN = re.compile(r"^\d{4}$")
     YEAR_MONTH_PATTERN = re.compile(r"^\d{6}$")
     PROCESSED_STATUSES = frozenset({"downloaded", "skipped"})
+    FILE_TYPES = {
+        "CAGEDMOV": "movement",
+        "CAGEDEXC": "exclusion",
+        "CAGEDFOR": "late_movement",
+    }
     MAX_NEW_FILES = 12
 
     def __init__(
@@ -184,6 +189,11 @@ class CheckAvailabilityService:
                             ),
                             "reference_month": reference_date,
                             "reference_year": year,
+                            "s3_key": self.build_s3_key(
+                                year,
+                                reference_date,
+                                filename,
+                            ),
                         }
                     )
 
@@ -199,6 +209,24 @@ class CheckAvailabilityService:
         path = f"{self.settings.FTP_ROOT_DIR}/{year}/{reference_date}/{filename}"
         encoded_path = quote(path)
         return f"ftp://{self.settings.FTP_HOST}{encoded_path}"
+
+    def build_s3_key(
+        self,
+        year: str,
+        reference_date: str,
+        filename: str,
+    ) -> str:
+        """Return the destination key for a raw CAGED archive."""
+        file_type = next(
+            (
+                value
+                for prefix, value in self.FILE_TYPES.items()
+                if filename.startswith(prefix)
+            ),
+            "other",
+        )
+        month = reference_date[-2:]
+        return f"raw/caged/year={year}/month={month}/file_type={file_type}/{filename}"
 
     def execute(self, event: dict[str, Any]) -> dict[str, Any]:
         """Return files for FTP files that need downstream processing."""
