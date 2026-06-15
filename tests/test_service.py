@@ -3,13 +3,13 @@ from typing import Any
 
 import pytest
 
-from src.exceptions import (
+from exceptions import (
     InvalidRegistryTreeError,
     RegistryItemNotFoundError,
     TooManyNewFilesError,
 )
-from src.service import CheckAvailabilityService
-from src.settings import Settings
+from service import CheckAvailabilityService
+from settings import Settings
 
 
 @dataclass

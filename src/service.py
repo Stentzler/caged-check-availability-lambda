@@ -8,12 +8,12 @@ from posixpath import basename
 from typing import Any, Protocol
 from urllib.parse import quote
 
-from src.exceptions import (
+from exceptions import (
     InvalidRegistryTreeError,
     RegistryItemNotFoundError,
     TooManyNewFilesError,
 )
-from src.settings import Settings
+from settings import Settings
 
 
 class FTPClientProtocol(Protocol):
