@@ -122,21 +122,3 @@ uv run python -m src.handler events/check-availability.json
 `sample/downloaded_files_registry.json` contains the complete DynamoDB registry
 fixture generated from `sample/caged_data.json`. All files are marked as
 `downloaded` and use fake S3 URLs.
-
-Seed the fixture into DynamoDB Local:
-
-```bash
-uv run python test.py seed-registry
-```
-
-Read the stored registry summary:
-
-```bash
-uv run python test.py read-registry
-```
-
-Verify that the live FTP comparison finds no new files:
-
-```bash
-uv run python test.py no-new-files
-```
