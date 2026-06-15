@@ -31,6 +31,7 @@ def handler(event: dict | None, context: object | None) -> dict:
     logger.info(
         "Finished CAGED availability check",
         new_files_count=len(response["new_files"]),
+        new_files=response["new_files"],
     )
     return response
 

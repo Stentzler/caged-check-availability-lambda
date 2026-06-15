@@ -1,6 +1,14 @@
 import handler
 
 
+class FakeLogger:
+    def __init__(self) -> None:
+        self.info_calls: list[tuple[str, dict[str, object]]] = []
+
+    def info(self, message: str, **kwargs: object) -> None:
+        self.info_calls.append((message, kwargs))
+
+
 class FakeCheckAvailabilityService:
     def execute(self, event: dict) -> dict:
         assert event == {"request_id": "local-test"}
@@ -31,7 +39,9 @@ class FakeLambdaContext:
 
 
 def test_lambda_handler_returns_service_response(monkeypatch) -> None:
+    fake_logger = FakeLogger()
     monkeypatch.setattr(handler, "service", FakeCheckAvailabilityService())
+    monkeypatch.setattr(handler, "logger", fake_logger)
 
     response = handler.lambda_handler(
         {"request_id": "local-test"},
@@ -54,3 +64,10 @@ def test_lambda_handler_returns_service_response(monkeypatch) -> None:
             },
         ],
     }
+    assert fake_logger.info_calls[-1] == (
+        "Finished CAGED availability check",
+        {
+            "new_files_count": 1,
+            "new_files": response["new_files"],
+        },
+    )
